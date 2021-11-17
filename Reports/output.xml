@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211116 23:46:37.628" rpa="false" schemaversion="2">
+<suite id="s1" name="LoginScenarios" source="C:\Users\l\PycharmProjects\RobotFrameworkTraining\Day2\OrangeHRM.robot">
+<test id="s1-t1" name="LoginWithValidCredential">
+<kw name="Start Application" library="Utility" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}[0]</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211116 23:46:37.951" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/index.php/auth/login'.</msg>
+<status status="PASS" starttime="20211116 23:46:37.951" endtime="20211116 23:46:43.067"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20211116 23:46:43.067" endtime="20211116 23:46:43.241"/>
+</kw>
+<status status="PASS" starttime="20211116 23:46:37.951" endtime="20211116 23:46:43.241"/>
+</kw>
+<kw name="Login To Application">
+<arg>${username}</arg>
+<arg>${password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:txtUsername</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211116 23:46:43.243" level="INFO">Typing text 'admin' into text field 'id:txtUsername'.</msg>
+<status status="PASS" starttime="20211116 23:46:43.243" endtime="20211116 23:46:43.393"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:txtPassword</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211116 23:46:43.394" level="INFO">Typing text 'admin123' into text field 'id:txtPassword'.</msg>
+<status status="PASS" starttime="20211116 23:46:43.393" endtime="20211116 23:46:43.640"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id:btnLogin</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20211116 23:46:43.640" level="INFO">Clicking button 'id:btnLogin'.</msg>
+<status status="PASS" starttime="20211116 23:46:43.640" endtime="20211116 23:46:48.618"/>
+</kw>
+<status status="PASS" starttime="20211116 23:46:43.242" endtime="20211116 23:46:48.618"/>
+</kw>
+<kw name="Close Application" library="Utility" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20211116 23:46:48.619" endtime="20211116 23:46:50.821"/>
+</kw>
+<status status="PASS" starttime="20211116 23:46:48.619" endtime="20211116 23:46:50.822"/>
+</kw>
+<tag>Positive</tag>
+<status status="PASS" starttime="20211116 23:46:37.951" endtime="20211116 23:46:50.822"/>
+</test>
+<doc>This test will cover all login scenarios</doc>
+<status status="PASS" starttime="20211116 23:46:37.628" endtime="20211116 23:46:50.828"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Positive</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="LoginScenarios">LoginScenarios</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
