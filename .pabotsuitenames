@@ -1,0 +1,6 @@
+datasources:8e83dc591cb99f922ce4c319a2b6f020555f3d1e
+commandlineoptions:9f8598a690c7367accf83ead504756ddd374acc9
+suitesfrom:no-suites-from-option
+file:889583d8b3310eaffaa5a95ee52c3dd55d469ba5
+--suite Suites.E2EForHRM
+--suite Suites.E2EForHRMNew
