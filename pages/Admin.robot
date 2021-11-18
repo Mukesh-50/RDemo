@@ -5,6 +5,7 @@ Library    SeleniumLibrary
 Search User
     [Arguments]    ${searchUser}
     wait until element is enabled    xpath://b[text()='Admin']      timeout=10
+    mouse over    xpath://b[text()='Admin']
     click element    xpath://b[text()='Admin']
     input text     id:searchSystemUser_userName      ${searchUser}.
     click element    id:searchBtn
